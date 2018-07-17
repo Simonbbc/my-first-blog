@@ -25,7 +25,9 @@ SECRET_KEY = 'na%fpb1dsdrm%4l**ag1*9mowxpk$0m7ih3_@4)togv@qm@8(j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'testblogliip.pythonanywhere.com'    
+]
 
 
 # Application definition
