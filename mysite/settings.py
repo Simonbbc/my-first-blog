@@ -26,7 +26,8 @@ SECRET_KEY = 'na%fpb1dsdrm%4l**ag1*9mowxpk$0m7ih3_@4)togv@qm@8(j'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'testblogliip.pythonanywhere.com'    
+    'testblogliip.pythonanywhere.com',
+    '127.0.0.1',
 ]
 
 

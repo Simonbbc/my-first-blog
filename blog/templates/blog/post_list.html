@@ -1,22 +1,28 @@
 <!doctype html>
+{% load static %}
 <html>
 <title>Blog Liip</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </html>
 <body>
+
   <div class="navbar">
-    <a href="#1">Home</a>
-    <a href="#">Blog</a>
-    <a href="#2">Contacnt</a>
-  </div>
-  {% for post in posts %}
+    <ul>
+  <li><a href="{% url 'post_list' %}">Home</a></li>
+  <li><a href="{% url 'post_list_new' %}">Blog</a></li>
+
+</ul>
+<img class="image" src="../../static/images/liip-logo.png"/>
   <div class="content">
-    <p>
-      published: {{ post.published_date }}
+    <h1 class="h1-standard">About us</h1>
+
+    <p class="p-home">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p>
-    <h1><a href="">{{ post.title }}</a></h1>
-  <p>
-    {{ post.text|linebreaksbr }}
-  </p>
-{% endfor %}
-</div>
+
+
+    <h2 class="h1-standard">Products</h2>
+  </div>
 </body>
